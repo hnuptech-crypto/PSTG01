@@ -16,7 +16,7 @@
 </section></main><div class="foot">Enfance Missionnaire · Paroisse Sainte Thérèse de l’Enfant Jésus et de la Sainte Face de Godomey</div>
 <script>
 'use strict';
-const API='https://ooobeyneiitjsmivhneb.supabase.co/functions/v1/em-admin';
+const API='https://ooobeyneiitjsmivhneb.supabase.co/functions/v1/bright-responder';
 const $=id=>document.getElementById(id);let activities=[];let registrations=[];
 async function api(action,payload={}){const headers={'Content-Type':'application/json','apikey':'sb_publishable_wWpg6oS-ilCFm0ooatP07Q_96Zm64yp'};const res=await fetch(API,{method:'POST',headers,body:JSON.stringify({action,...payload})});let data={};try{data=await res.json()}catch{}if(!res.ok)throw new Error(data.error||('Erreur serveur ('+res.status+')'));return data}
 function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
